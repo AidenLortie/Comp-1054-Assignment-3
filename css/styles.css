@@ -1,7 +1,8 @@
 body{
     margin: 0;
     font-size: 14pt;
-    font-family: sans-serif;
+    font-family: "Varela Round", sans-serif;
+    background: bisque;
 }
 
 header {
@@ -21,7 +22,7 @@ header nav ul {
 header nav ul:hover {
     display: inline;
     transition: .25s ease-in-out;
-    color: #f8f8f8;
+    color: black;
     cursor: pointer;
 }
 header img {
@@ -31,14 +32,14 @@ header img {
 }
 
 #masthead {
-    width: 100vw;
+    display: flex;
+    width: 100%;
     height: auto;
 }
 
 #NNF {
     display: flex;
     align-items: center;
-    width: 90vw;
     flex-direction: column;
 }
 
@@ -46,10 +47,12 @@ header img {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+    background: #544535;
+    border-radius: 105px;
 }
 
 #grid span{
-    width: 25vw;
+    width: 20vw;
     background: #6c4834;
     display: flex;
     align-items: center;
@@ -58,7 +61,75 @@ header img {
     font-size: 20px;
     font-weight: bold;
     padding: 20px;
-    margin: 10px;
-    height: 30vw;
+    margin: 5px;
+    height: 20vw;
+    border-radius: 100px;
 }
+
+#sustain{
+    background-image: url("../img/burlap_sack.jpg");
+    width: 100%;
+    height: 50vh;
+    background-repeat: repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    flex-direction: column;
+}
+
+#callToAction{
+    background: bisque;
+    padding: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+#callToAction:hover{
+    background: #544535;
+    color: #fefefe;
+}
+
+#Recipes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    margin-top:10px;
+    background: #544535;
+}
+
+#Recipes h2{
+    font-size: 24pt;
+    font-weight: bold;
+    color: bisque;
+}
+
+#Recipes figure img{
+    width: 100%;
+    height: 40vh;
+    filter: brightness(50%);
+    transition: .25s ease-in-out;
+}
+
+#Recipes figure img:hover{
+    filter: brightness(100%);
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    background: #6c4834;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+small{
+    margin-left: 10px;
+}
+
 
